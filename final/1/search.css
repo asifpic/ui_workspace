@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+/* Web fonts------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Smooch&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #262626;
+    width: 1020px;
+    margin: 30px auto;
+    font-size: 13px;
+}
+
+header {
+    width: 1420px;
+    padding: 25px;
+    margin: 30px auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 상단 */
+#logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    color: #E4C48F;
+    text-align: right;
+    margin-left: 900px;
+}
+
+/* 메인 섹션 */
+
+section article.heading {
+    color: #D8ACA7;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Verdana";
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.searchTerm {
+    width: 85%;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color:#D8ACA7;
+    margin-left: 30px;
+}
+
+.searchTerm:focus {
+    color: #262626;
+}
+
+.search_btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D8ACA7;
+    background: #D8ACA7;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.ott {
+    width: 1000px;
+    height: 300px;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+.ott {
+    width:900px;
+    height: auto;
+    padding: 10px;
+    overflow: scroll;
+    /* 가로 스크롤 */
+    /* overflow: auto; */
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+.ott::-webkit-scrollbar {
+   width: 20px;
+}
+.ott::-webkit-scrollbar-thumb {
+    background-color: #D8ACA7; /*스크롤바의 색상*/
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.ott::-webkit-scrollbar-track {
+    background-color: gray; /*스크롤바 트랙 색상*/
+}
+
+.ott_list :hover {
+   transform: scale(1.2);
+}
+
+section article.ott_list {
+    padding: 10px;
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+}
+.container {
+    float: center;
+}
+.container > .btn {
+    width: 100px;
+    height: 15px;
+    background: #D8ACA7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    top: 150px;
+    left: 400px;
+}
+
+.container > .btn:hover {
+    transform: scale(1.05);
+}
+
+
+.modal {
+    background: #b3b3b3;
+    width: 1000px;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    top: -100%;
+    position: fixed;
+    left: 23%;
+    text-align: left;
+    z-index: 1;
+    box-shadow: #E4C48F;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(255, 179, 179, 0.692);
+}
+
+.modal .header {
+    padding: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+}
+.modal .body {
+    padding: 20px;
+    font-size: 13px;
+    float: right;
+}
+
+.btn {
+    padding: 10px 10px;
+    display: inline-block;
+    margin: 20px 0;
+    color:#D8ACA7;
+    position: relative;
+    transition: all .4s ease;
+    cursor: pointer;    
+}
+
+.modal>.btn {
+    /* margin-left:calc(100% - 100px - 900px); */
+    margin-left: 950px;
+    top: -600px;
+    color: #ff6150;
+}
+
+
+.btn:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container.modal-open .modal {
+top: 200px;
+}
+
+/* 초과된 체크박스 줄바꿈 하는 법을 몰라서 overflow 스크롤 적용함 */
+.body_date,.body_class,.body_genre, .body_nation, .slidecontainer {
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    left: 170px;
+    overflow: auto;
+}
+.body_genre::-webkit-scrollbar {
+    width: 20px;
+}
+.body_genre::-webkit-scrollbar-thumb {
+    background-color: #D8ACA7; /*스크롤바의 색상*/
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.body_genre::-webkit-scrollbar-track {
+    background-color: gray; /*스크롤바 트랙 색상*/
+}
+
+.body_nation::-webkit-scrollbar {
+    width: 20px;
+}
+.body_nation::-webkit-scrollbar-thumb {
+    background-color: #D8ACA7; /*스크롤바의 색상*/
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.body_nation::-webkit-scrollbar-track {
+    background-color: gray; /*스크롤바 트랙 색상*/
+}
+
+/* 체크박스에 스타일을 적용하면 체크가 되지 않는 오류 발생 */
+/* input의 id와 label의 for를 통일시키면 해결된다... */
+
+label{
+    display:inline-block;
+    width:110px;
+    line-height:8px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+input[type=checkbox] + label:before {
+    content: "";  
+    display: inline-block;  
+
+    width: 20px;  
+    height: 20px;  
+
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 1px;  
+    background-color: #ccc;  
+    border-radius: 2px; 
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); 
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #D8ACA7;
+    text-align: center;  
+    line-height: 18px; 
+}
+
+.body_date {
+    top: -50px;
+}
+
+.body_class {
+    top: -45px;
+}
+
+.body_genre {
+    top: -50px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.body_genre>p {
+    width: 105px;
+}
+
+.body_nation {
+    top: -60px;
+    width: 700px;
+    display: flex;
+}
+
+.body_nation>p {
+    width: 90px;
+}
+
+
+.slidecontainer {
+    top: -50px;
+    width: 100%;
+    width: 700px;
+    
+}
+
+.slider {
+    -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+    width: 100%; /* 슬라이더 길이 */
+    height: 15px; 
+    border-radius: 5px; 
+    background: gray; 
+    outline: none; 
+}
+
+/* 슬라이더 핸들(클릭해서 드래그하는 부분) 커스텀 
+(Chrome, Opera, Safari, Edge 브라우저를 위해서는 -webkit-을,
+Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+    appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+    width: 25px; /* 슬라이더 핸들 길이 */
+    height: 25px; /* 슬라이더 핸들 높이 */
+    border-radius: 50%; /* 핸들 모양을 원모양으로 만들기 위함 */
+    background: #D8ACA7; /* 슬라이더 핸들 색상 */
+    cursor: pointer; /* 슬라이더 핸들에 마우스를 갖다대면 포인터로 변경 */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; /* 슬라이더 핸들 길이 */
+    height: 20px; /* 슬라이더 핸들 높이 */
+    border-radius: 50%; /* 핸들 모양을 원모양으로 만들기 위함 */
+    background: #00f; /* 슬라이더 핸들 색상 */
+    cursor: pointer; /* 슬라이더 핸들에 마우스를 갖다대면 포인터로 변경 */
+}
+
+/* .modal.btn {
+    top: 100px;
+} */
+
+
+
+.new {
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+}
+
+
+section article.new_list {
+    width: 220px;
+    height: 400px;
+    display: grid;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section article.new_list>img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.new_posterName {
+    font-size: 15px;
+    font-weight: bold;
+    color: #D8ACA7;
+    font-family: "Verdana";
+    margin-bottom: 30px;
+}
+
+
+.new_posterImage>span {
+    display: block;
+    position: relative;
+    bottom: 2px;
+    letter-spacing: -1px;
+}
+
+article.new_list :hover {
+    transform: scale(1.02);
+}
+
+
+
+footer>p {
+    font-size: 10px;
+    color: #D8ACA7;
+    font-family: "Verdana";
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer>a {
+    color: #D8ACA7;
+    font-size: 14px;
+    text-align: center;
+}

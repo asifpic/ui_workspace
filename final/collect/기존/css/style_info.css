@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/* 전체속성 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  #262626
+}
+
+/* a태그 데코 */
+a {
+    text-decoration: none;
+}
+
+/* ul/ol 태그 리스트스타일 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 헤더부분(올더무비,프로필)------------------------------------------ */
+header {
+    width: 1440px;
+    padding: 25px;
+    margin: 30px auto;
+    /* border-radius: 10px; */
+}
+
+.topbutton {
+    /* display:scroll; */
+    position: fixed;
+    bottom: 50px;
+    right: 300px;
+    color:  white;
+    border: 1px solid;
+}
+
+header nav.topmenu {
+    width: 100%;
+}
+
+header nav.topmenu a {
+    font-size: 20px;
+    color: #E5C09D
+}
+
+header nav.topmenu a:nth-of-type(1) {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav.topmenu a:nth-of-type(2) {
+    width: 40px;
+    height: 40px;
+    padding-left: 11px;
+    padding-top: 4px;
+    border-radius: 50%;
+    float: right;
+    border: 1px black solid;
+}
+
+header nav.topmenu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* -------------섹션 속성-------------- */
+
+/* 섹션속성 */
+section {
+    width: 1200px;
+    /* padding: 25px; */
+    margin: 10px auto;
+    /* border-radius: 10px; */
+    /* background-color: #E5C09D */   
+}
+
+/* 영화 기본정보 포스터 이미지 */
+section div.poster img{
+    float: left;
+}
+
+/* 영화 기본정보 */
+section div.poster div.poster_info h2.movie_info{
+    padding-left: 350px;
+    color: white;
+}
+
+/* 별점정보 */
+section div.poster div.poster_info span.star_info{
+    color: #fc0;
+    margin-right: 250px;
+} 
+
+/* 리뷰쓰기 */
+section div.poster div.poster_info a{
+    color: rgb(60, 157, 157);
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+/* 영화 기본정보 포스터 높이 */
+section div.poster{
+    height: 400px;
+}
+
+/* 영화 기본정보 제목 */
+section div.poster h1{
+    font-size: 60px;
+    padding-top: 160px;
+    padding-left: 350px;
+}
+
+/* ott 이미지 */
+section div.ott img{
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* ott 더보기 */
+section div.ott i{
+    border-radius: 50%;
+    float: right;
+    padding: 8px;
+    margin: 10px;
+    font-size: 27px;
+    color: white;
+    background-color: #E5C09D;
+}
+
+/* play 박스 */
+section div i.play_ott{
+    border-radius: 8px;
+    /* padding: 10px; */
+    width: 120px;
+    height: 50px;
+    background-color: rgb(60, 157, 157);
+    text-align: center;
+    font-weight: bold;
+    padding: 3px 10px 0px 0px;
+}
+
+/* h1태그 속성 */
+section div h1{
+    padding-bottom: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+/* h2태그 속성 */
+section div h2{
+    padding-bottom: 10px;
+    color: #E5C09D;
+    font-size: 18px;
+}
+
+/* 감독/배우 이미지 */
+section div.director_actor img{
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* 리뷰더보기 */
+section div.review i.more_review{
+    float: left;
+    padding-top: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 22px;
+    background-color: rgb(60, 157, 157);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 리뷰 div태그 높이 */
+section div.review {
+    height: 350px;
+}
+
+
+/* 비슷한컨텐츠 포스터 */
+section div.same_contents img{
+    padding-right: 15px;
+}
+
+/* 기본정보 태그 */
+section div.basic{
+    height: 380px;
+}
+
+/* 영화 예고편정보 */
+section div.basic h2{
+    font-size: 23px;
+    margin: 25px 20px 0px 535px;
+    text-align: left;
+}
+
+/* 동영상 예고편 */
+section div.basic iframe{
+    float: left;
+    width: 500px;
+    height: 315px;
+}
+
+
+section div.poster div.poster_info input{
+    display: none;
+}
+
+section div.poster div.poster_info label:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+/* component */
+
+
+
+.star-rating {
+    border:solid 1px #ccc;
+    display:flex;
+    flex-direction: row-reverse;
+    font-size:1.5em;
+    justify-content:space-around;
+    padding:0 .2em;
+    text-align:center;
+    width:5em;
+  }
+  
+  .star-rating input {
+    display:none;
+  }
+  
+  .star-rating label {
+    color:#ccc;
+    cursor:pointer;
+  }
+  
+  .star-rating :checked ~ label {
+    color:#f90;
+  }
+  
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color:#fc0;
+  } 
+
+  
+
+
+
+
+
+

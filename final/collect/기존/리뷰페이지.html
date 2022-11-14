@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL THE MOVIE</title>
+    <link rel="stylesheet" href="css/리뷰style.css">
+    <script src="https://kit.fontawesome.com/85339c20c0.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="1.ico" type="image/x-icon">
+    <link rel="icon" href="1.ico" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="sweetalert2@10.js"></script>
+    <script>
+    function toggleBtn1() {
+        const btn1 = document.getElementById('btn1');
+
+        if(btn1.style.visibility !== 'hidden') {
+          btn1.style.visibility = 'hidden';
+        }
+        else {
+          btn1.style.visibility = 'visible';
+        }
+      }
+
+      $().ready(function () {
+            $(".confirmStart").click(function () {
+                Swal.fire({
+                    title: '리뷰를 신고 하시겠습니까?',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: '확인',
+                    cancelButtonText: '취소'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            '신고가 접수되었습니다.',
+                        )
+                    }
+                })
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="#" class="topbutton"><i class="fas fa-arrow-up"></i>Top</a>
+    <header class="header">
+        <nav class="topmenu">
+            <a href="#">ALL THE MOVIE</a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="bodytop">모든리뷰</div>
+        <SELECT class=list size=1>
+            <OPTION VALUE=1>최근 작성순</OPTION>
+            <OPTION VALUE=2>좋아요 순</OPTION>
+            <OPTION VALUE=3>평가 높은 순</OPTION>
+            <OPTION VALUE=4>평가 낮은 순</OPTION>
+        </SELECT>
+        <div class="row1">
+            <div class="col1">
+                <a href="#"><img class="poster" src="img/1.jpg" alt="" width="200" height="250"></a>
+                <div class="review">범죄도시2</div>
+                <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                <div class="text">스포임</div>
+                <button class="confirmStart"><div class="report"><i class="fas fa-bell-concierge"></i> 신고</div></button>
+                <button id='btn1' onclick='toggleBtn1()'><i class="fas fa-face-angry"></i><br>스포일러가 포함된 리뷰입니다.</button>
+            </div>
+            <div class="col2">
+                <a href="#"><img class="poster" src="img/2.jpg" alt="" width="200" height="250"></a>
+                <div class="review">토르</div>
+                <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                <div class="text">리뷰</div>
+                <button class="confirmStart"><div class="report"><i class="fas fa-bell-concierge"></i> 신고</div></button>
+                <button id='btn2'><i class="fas fa-face-angry"></i><br>신고가 접수된 리뷰입니다.</button>
+            </div>
+            <div class="col3">
+                <a href="#"><img class="poster" src="img/3.jpg" alt="" width="200" height="250"></a>
+                <div class="review">탑건</div>
+                <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sequi quia illo, commodi, provident itaque fugiat a quas ratione hic deserunt asperiores repudiandae velit maxime doloremque non. Iste, quas dolore.
+                </div>
+                <button class="confirmStart"><div class="report"><i class="fas fa-bell-concierge"></i> 신고</div></button>
+            </div>
+            <div class="col4">
+                <a href="#"><img class="poster" src="img/4.jpg" alt="" width="200" height="250"></a>
+                <div class="review">헤어질 결심</div>
+                <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque harum porro, in amet corrupti facere incidunt. Repellat excepturi at voluptatem corrupti iure! Adipisci laborum exercitationem modi, laboriosam vel provident voluptatum.</div>
+                <button class="confirmStart"><div class="report"><i class="fas fa-bell-concierge"></i> 신고</div></button>
+            </div>
+        </div>
+
+        <div class="pagenumber"> 
+            <a class="number" href="#"><i class="fas fa-angle-left"></i></a>
+            <a class="number" href="#">1</a>
+            <a class="number" href="#">2</a>
+            <a class="number" href="#">3</a>
+            <a class="number" href="#">4</a>
+            <a class="number" href="#">5</a>
+            <a class="number" href="#">6</a>
+            <a class="number" href="#">7</a>
+            <a class="number" href="#">8</a>
+            <a class="number" href="#">9</a>
+            <a class="number" href="#"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </section>
+
+</body>
+
+</html>

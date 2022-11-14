@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #262626;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 헤더부분(올더무비,프로필) 탑버튼------------------------------------------ */
+header {
+    width: 1440px;
+    padding: 25px;
+    margin: 30px auto;
+    /* border-radius: 10px; */
+}
+
+.topbutton {
+    /* display:scroll; */
+    position: fixed;
+    bottom: 50px;
+    right: 300px;
+    color: white;
+    border: 1px solid;
+}
+
+header nav.topmenu {
+    width: 100%;
+}
+
+header nav.topmenu a {
+    font-size: 20px;
+    color: #E5C09D
+}
+
+header nav.topmenu a:nth-of-type(1) {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav.topmenu a:nth-of-type(2) {
+    width: 40px;
+    height: 40px;
+    padding-left: 11px;
+    padding-top: 4px;
+    border-radius: 50%;
+    float: right;
+    border: 1px black solid;
+}
+
+header nav.topmenu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 모든리뷰부터 리뷰목록------------------------------------------ */
+section {
+    font-size: 20px;
+    margin: 80px auto;
+    width: 1200px;
+    color: #E5C09D;
+    font-weight: 700;
+}
+
+section .list{
+    color: #E5C09D;
+    font-size: 15px;
+    margin: 0 0 20px 1090px;
+    border: 1px solid #E5C09D;
+}
+section .bodytop {
+    margin-bottom: 30px;
+}
+
+.col1 {
+    border: 5px solid #E5C09D;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.col2 {
+    border: 5px solid #E5C09D;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.col3 {
+    border: 5px solid #E5C09D;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.col4 {
+    border: 5px solid #E5C09D;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.poster{
+    margin: 10px;
+}
+
+.review{
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+.star{
+    position: absolute;
+    top: 60px;
+    left: 230px;
+    font-size: 10px;
+}
+.text{
+    position: absolute;
+    top: 110px;
+    left: 230px;
+}
+#btn1{
+    position: absolute;
+    color: #E5C09D;
+    font-size: 40px;
+    left: 220px;
+    top: 90px;
+    padding: 35px 200px;
+    border: 1px solid #E5C09D;
+}
+#btn2{
+    position: absolute;
+    color: #E5C09D;
+    font-size: 40px;
+    left: 220px;
+    top: 90px;
+    padding: 35px 240px;
+    border: 1px solid #E5C09D;
+}
+.pagenumber{
+    text-align: center;
+    margin-top: 50px;
+}
+.number{
+    color: #E5C09D;
+    margin: 0 20px;
+}
+
+.confirmStart{
+    float: right;
+    border:0;
+    outline: 0;
+    padding: 0;
+    font-size: 21px;
+    font-weight: bold;
+    color: red;
+    margin: 10px 20px;
+}

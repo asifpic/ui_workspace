@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #052D37;
+    width: 1440px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 상단 */
+#logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 0 0 100px;
+    clear: both;
+    position: relative;
+}
+
+#profile {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    margin: 0 100px 0 0;
+    color: #E4C48F;
+    float: right;
+}
+
+
+/* 검색창 */
+.search {
+    position: relative;
+    width: 1240px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 10px;
+    font-size: 13px;
+    margin: 0 100px 0 100px;
+}
+
+i {
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    right: 0px;
+    
+}
+
+/* 메인 섹션 */
+.main_head {
+    position: relative;
+    color: #E4C48F;
+    padding: 20px;
+    margin-left: 140px;
+
+}
+
+/* 영화 이미지 */
+.list {
+    text-align: center;    
+}
+
+.list img {
+    /* width: calc(33.333% - 10px); */
+    width: 238px;
+    height: 337px;
+    float: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* 에디터의 추천 */
+.editorlist0,.editorlist1,.editorlist2,.editorlist3 {
+    padding: 20px;
+    width: 1097px;
+    text-align: left;
+    color: white;
+    margin-left: 172px;
+    margin-bottom: 10px;
+    background-image: url("https://picsum.photos/id/681/600/400");
+    
+}
+
+.editorlist1 {
+    background-image: url("https://picsum.photos/id/1022/600/400");
+    
+}
+
+.editorlist2{
+    background-image: url("https://picsum.photos/id/211/600/400");
+}
+
+.editorlist3 {
+    background-image: url("https://picsum.photos/id/743/600/400");
+}
+
+/* 신작 소개 */
+.new_video {
+    margin-left: 172px;
+    margin-right: 80px;
+    float: left;
+    padding: 10px;
+}
+
+.new_videoHeader {
+    padding: 10px;
+    position: relative;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    float: left;
+}
+
+ .new_videoPage0, .new_videoPage1, .new_videoPage2 {
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+    margin-right: 172px;
+    
+} 
+
+.new_videoPage0 {
+    margin-top: 90px;
+}
+
+.new_videoPage1 {
+    margin-top: 190px;
+}
+
+.new_videoPage2 {
+    margin-top: 170px;
+}
+
+
+

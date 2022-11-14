@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/* Web fonts------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Smooch&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #262626;
+    width: 1420px;
+    margin: 30px auto;
+    font-size: 13px;
+}
+
+header {
+    width: 1420px;
+    padding: 25px;
+    margin: 30px auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 상단 */
+#logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 0 0 100px;
+    clear: both;
+    position: relative;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+    display: inline;
+    position: relative;
+    margin: 0 100px 0 0;
+    color: #E4C48F;
+    float: right;
+}
+
+/* 메인 섹션 */
+
+section article.heading {
+    color: #D8ACA7;
+    font-family: "Verdana";
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 220px;
+    margin-bottom: 100px;
+}
+
+.ott {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.ott {
+    width:900px;
+    height: auto;
+    padding: 10px;
+    overflow: scroll;
+    /* 가로 스크롤 */
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 50px;
+    /* text-align: center; */
+}
+
+
+.ott::-webkit-scrollbar {
+   width: 20px;
+}
+.ott::-webkit-scrollbar-thumb {
+    background-color: #D8ACA7; /*스크롤바의 색상*/
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.ott::-webkit-scrollbar-track {
+    background-color: gray; /*스크롤바 트랙 색상*/
+}
+
+article.ott_list :hover {
+   transform: scale(1.4);
+}
+
+/* section article.angle {
+    color: #D8ACA7; 
+    display: inline;
+    position: absolute;
+    margin-top: 30px;
+} */
+
+
+section article.ott_list {
+    padding: 10px;
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+}
+
+
+.new {
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -20px;
+}
+
+
+section article.new_list {
+    width: 220px;
+    height: 400px;
+    display: grid;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section article.new_list>img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.new_posterName {
+    font-size: 15px;
+    font-weight: bold;
+    color: #D8ACA7;
+    font-family: "Verdana";
+    margin-bottom: 30px;
+}
+
+
+.new_posterImage>span {
+    display: block;
+    position: relative;
+    bottom: 2px;
+    letter-spacing: -1px;
+}
+
+footer>p {
+    font-size: 10px;
+    color: #D8ACA7;
+    font-family: "Verdana";
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer>a {
+    color: #D8ACA7;
+    font-size: 14px;
+    text-align: center;
+}

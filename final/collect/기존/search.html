@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="./favicon.ico">
+    <script src="https://kit.fontawesome.com/94f89c10af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <title>Search</title>
+</head>
+<body>
+    <header>
+        <span id="logo">
+            <a href="#"><img src="img/logo.png"></a>
+        </span>
+
+        <span id="profile">
+            <a href="#"><i class="fa-solid fa-user" aria-hidden="true" style="color:antiquewhite; font-size:20px;"></i></a>
+        </span>
+    </header>
+    <section>
+        <article class="heading">
+            <h2>컨텐츠 찾기</h2>
+        </article>
+        <div class="searchBar">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="영화 제목, 감독, 배우 이름 입력">
+            <button type="submit" class="search_btn"><i class="fa fas fa-search"></i></button>
+        </div>
+        </div>
+
+        <div class="container">
+            <a class="btn js-click-modal"><i class="fas fa-filter"></i>&nbsp;&nbsp;필터 적용</a>
+            <div class="modal">
+                <div class="header">개봉 시기</div>
+                <div class="body_date"><input type="date" id="Date"></div>
+                <div class="header">상영 등급</div>
+                <div class="body_class">
+                    <input id="box1" type="checkbox" />
+                    <label for="box1">전체 관람가</label>
+                    <input id="box2" type="checkbox" />
+                    <label for="box2">15세 이상</label>
+                    <input id="box3" type="checkbox" />
+                    <label for="box3">청소년 관람불가</label>
+                </div>
+                <div class="header">장르</div>
+                <div class="body_genre">
+                    <p><input id="drama" type="checkbox" />
+                    <label for="drama">드라마</label></p>
+                    <p><input id="action" type="checkbox" />
+                    <label for="action">액션</label></p>
+                    <p><input id="thriller" type="checkbox" />
+                    <label for="thriller">스릴러</label></p>
+                    <p><input id="horror" type="checkbox" />
+                    <label for="horror">호러</label></p>
+                    <p><input id="documentary" type="checkbox" />
+                    <label for="documentary">다큐멘터리</label></p>
+                    <p><input id="animation" type="checkbox" />
+                    <label for="animation">애니메이션</label></p>
+                    <p><input id="trip" type="checkbox" />
+                    <label for="trip">여행</label></p>
+                    <p><input id="history" type="checkbox" />
+                    <label for="history">역사</label></p>
+                    <p><input id="war" type="checkbox" />
+                    <label for="war">전쟁</label></p>
+                    <p><input id="fantasy" type="checkbox" />
+                    <label for="fantasy">판타지</label></p>
+                    <p><input id="musical" type="checkbox" />
+                    <label for="musical">뮤지컬</label></p>
+                    <p><input id="teen" type="checkbox" />
+                    <label for="teen">청소년</label></p>
+                    <p><input id="sf" type="checkbox" />
+                    <label for="sf">SF</label></p>
+                    <p><input id="family" type="checkbox" />
+                    <label for="family">가족</label></p>
+                    <p><input id="romance" type="checkbox" />
+                    <label for="romance">로맨스</label></p>
+                </div><br>
+                <div class="header">국가</div><br>
+                <div class="body_nation">
+                    <p><input id="korea" type="checkbox" />
+                        <label for="korea">한국</label></p>
+                    <p><input id="usa" type="checkbox" />
+                        <label for="usa">미국</label></p>
+                    <p><input id="india" type="checkbox" />
+                        <label for="india">인도</label></p>
+                    <p><input id="russia" type="checkbox" />
+                        <label for="russia">러시아</label></p>
+                    <p><input id="japan" type="checkbox" />
+                        <label for="japan">일본</label></p>
+                    <p><input id="china" type="checkbox" />
+                        <label for="china">중국</label></p>
+                    <p><input id="italy" type="checkbox" />
+                        <label for="italy">이탈리아</label></p>
+                    <p><input id="france" type="checkbox" />
+                        <label for="france">프랑스</label></p>
+                    <p><input id="newzealand" type="checkbox" />
+                        <label for="newzealand">뉴질랜드</label></p>
+                </div>
+                <div class="header">평점</div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>평점: <span id="value"></span></p>
+                </div>
+                <a class="btn js-close-modal"><i class="fa-solid fa-x"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- <div class="modal_layer"></div> -->
+
+
+        <div class="ott">
+        <article class="ott_list">
+            <a href="#"><img src="img/티빙.jpg" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/넷플릭스.png" alt="" style="border-radius: 50%; padding: 10px; width:50px; height: 50px;"></a>
+            <a href="#"><img src="img/왓챠.png" alt="" style="border-radius: 50%; padding: 10px; width:50px; height: 50px;"></a>
+            <a href="#"><img src="img/쿠팡플레이.png" alt="" style="border-radius: 50%; padding: 10px; width:50px; height: 50px;"></a>
+            <a href="#"><img src="img/시리즈.png" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/시즌.png" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/웨이브.png" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/애플티비.PNG" alt="" style="border-radius: 50%; padding: 10px; width:50px; height: 50px;"></a>
+            <a href="#"><img src="img/디즈니플러스.PNG" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/디즈니플러스.PNG" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/아마존프라임.png" alt="" style="border-radius: 50%; padding: 10px; width:50px; height: 50px;"></a>
+            <a href="#"><img src="img/아마존프라임.png" alt="" style="border-radius: 50%; padding: 10px; width:50px; height: 50px;"></a>
+            <a href="#"><img src="img/라프텔.png" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+            <a href="#"><img src="img/라프텔.png" alt="" style="border-radius: 50%; padding: 10px; width:50px;"></a>
+        </article>
+        
+            </div>
+
+        <div class="new">
+                <article class="new_list">
+                    <a href="#"><img src="img/그래서 나는.jpg" alt=""></a>
+                    <span class="new_posterName">그래서 나는 <br>안티팬과 결혼했다 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/그레이트 뷰티.jpg" alt=""></a>
+                    <span class="new_posterName">그레이트 뷰티 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/상의원.jpg" alt=""></a>
+                    <span class="new_posterName">상의원 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/스파이 패밀리.jpg" alt=""></a>
+                    <span class="new_posterName">스파이 패밀리 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/우영우.jpg" alt=""></a>
+                    <span class="new_posterName">이상한 변호사 우영우 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/안나.jpg" alt=""></a>
+                    <span class="new_posterName">안나 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/피막.jpg" alt="" style="height: 310px;"></a>
+                    <span class="new_posterName">피막 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/미남당.jpg" alt=""></a>
+                    <span class="new_posterName">미남당 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/비밀의 집.jpg" alt=""></a>
+                    <span class="new_posterName">비밀의 집 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/이브.jpg" alt="" style="height: 330px;"></a>
+                    <span class="new_posterName">이브 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/블랙의 신부.jpg" alt=""></a>
+                    <span class="new_posterName">블랙의 신부 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+                <article class="new_list">
+                    <a href="#"><img src="img/환혼.jpg" alt="" style="height: 320px;"></a>
+                    <span class="new_posterName">환혼 &nbsp;
+                        <i class="fas fa-heart" aria-hidden="true" style="color:#ff747f;font-size:13px;"></i></span>
+                </article>
+        </div>
+    </section>
+    <footer>
+        <!-- <hr> -->
+        <p>&copy; Copyright 2022 by All the movie. All rights reserved.</p>
+        <a style="display:scroll;position:fixed;bottom:10px;right:10px;" href="#" title="Top">TOP</a>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="search.css">
+    <script src="search.js"></script>
+</body>
+</html>

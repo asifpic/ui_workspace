@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Sample</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .wrap_vertical {
+            width: 500px;
+            height: 200px;
+        }
+        
+        .wrap_vertical>a>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        div.wrap_vertical {
+        background-color: rgb(161, 247, 11);
+        overflow: auto;
+        white-space: nowrap;
+        }
+
+        div.wrap-vertical::-webkit-scrollbar{
+            display: none; 
+        }
+
+        div.wrap_vertical a {
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-decoration: none;
+            padding: 14px;
+        }
+
+        div.scrollMenu a:hover {
+            background-color: rgba(229, 242, 208, 0.797);
+        }
+
+        /* .wrap-vertical{
+            width: 500px;
+            padding: 20px;
+            overflow: scroll;
+            color: #112031;
+            background: #F0D9FF;
+            border: 1px solid #000;
+            overflow: auto;
+            white-space: nowrap;
+        } */
+    </style>
+
+</head>
+<body>
+    <h2>Vertical Scroll Sample</h2>
+    <div class="wrap_vertical">
+        <a href="#netflix"><img src="img/넷플릭스.png" alt=""></a>
+        <a href="#laftel"><img src="img/라프텔.png" alt=""></a>
+        <a href="#disney"><img src="img/디즈니플러스.PNG" alt=""></a>
+        <a href="#seezen"><img src="img/시즌.png" alt=""></a>
+        <a href="#series"><img src="img/시리즈.png" alt=""></a>
+        <a href="#coupang"><img src="img/쿠팡플레이.png" alt=""></a>
+    </div>
+</body>
+</html>
